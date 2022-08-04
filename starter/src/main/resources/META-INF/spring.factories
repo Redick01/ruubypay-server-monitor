@@ -1,0 +1,2 @@
+org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
+  io.redick.monitor.starter.configuration.MonitorConfiguration

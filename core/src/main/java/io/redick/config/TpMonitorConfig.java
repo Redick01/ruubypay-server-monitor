@@ -12,15 +12,5 @@ public class TpMonitorConfig {
 
     private String applicationName;
 
-    private Integer monitorInterval;
-
-    private boolean businessTp;
-
-    private boolean alibabaDubbo;
-
-    private boolean apacheDubbo;
-
-    private boolean tomcat;
-
-    private boolean undertow;
+    private Integer monitorInterval = 5;
 }

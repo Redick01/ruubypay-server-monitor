@@ -1,3 +1,73 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <checkstyle version="8.19">
+<file name="/Users/penghuiliu/prog/ruubypay-server-monitor/core/src/main/java/io/redick/util/ReflectionUtil.java">
+<error line="13" column="30" severity="error" message="&apos;{&apos; 后应有空格。" source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="13" column="31" severity="error" message="&apos;}&apos; 前应有空格。" source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="15" column="5" severity="error" message="方法注释：缺少Javadoc注释。" source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="27" severity="error" message="本行字符数 144个，最多：120个。" source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="27" column="5" severity="error" message="方法注释：缺少Javadoc注释。" source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="35" column="5" severity="error" message="方法注释：缺少Javadoc注释。" source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+<file name="/Users/penghuiliu/prog/ruubypay-server-monitor/core/src/main/java/io/redick/MonitorRun.java">
+<error line="35" column="5" severity="error" message="方法注释：缺少Javadoc注释。" source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+<file name="/Users/penghuiliu/prog/ruubypay-server-monitor/core/src/main/java/io/redick/config/TpMonitorConfig.java">
+</file>
+<file name="/Users/penghuiliu/prog/ruubypay-server-monitor/core/src/main/java/io/redick/collector/apachedubbo/DubboVersion.java">
+<error line="10" column="28" severity="error" message="&apos;{&apos; 后应有空格。" source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="10" column="29" severity="error" message="&apos;}&apos; 前应有空格。" source="com.puppycrawl.tools.checkstyle.checks.whitespace.WhitespaceAroundCheck"/>
+<error line="22" column="38" severity="error" message="&apos;v1&apos;需要Javadoc注释 @param 。" source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="22" column="49" severity="error" message="&apos;v2&apos;需要Javadoc注释 @param 。" source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+<file name="/Users/penghuiliu/prog/ruubypay-server-monitor/core/src/main/java/io/redick/collector/apachedubbo/ApacheDubboCollector.java">
+<error line="46" severity="error" message="本行字符数 136个，最多：120个。" source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="54" column="5" severity="error" message="方法注释：缺少Javadoc注释。" source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="60" column="5" severity="error" message="方法注释：缺少Javadoc注释。" source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="72" column="5" severity="error" message="方法注释：缺少Javadoc注释。" source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="81" severity="error" message="本行字符数 121个，最多：120个。" source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="81" column="121" severity="error" message="&apos;+&apos; 应另起一行。" source="com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck"/>
+</file>
+<file name="/Users/penghuiliu/prog/ruubypay-server-monitor/core/src/main/java/io/redick/collector/alibabadubbo/AlibabaDubboCollector.java">
+<error line="39" severity="error" message="本行字符数 126个，最多：120个。" source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+<error line="39" column="126" severity="error" message="&apos;+&apos; 应另起一行。" source="com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck"/>
+</file>
+<file name="/Users/penghuiliu/prog/ruubypay-server-monitor/core/src/main/java/io/redick/collector/tomcat/TomcatCollector.java">
+<error line="46" column="17" severity="error" message="&apos;,&apos; 前不应有空格。" source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
+<error line="48" column="17" severity="error" message="&apos;,&apos; 前不应有空格。" source="com.puppycrawl.tools.checkstyle.checks.whitespace.NoWhitespaceBeforeCheck"/>
+</file>
+<file name="/Users/penghuiliu/prog/ruubypay-server-monitor/core/src/main/java/io/redick/collector/Collector.java">
+</file>
+<file name="/Users/penghuiliu/prog/ruubypay-server-monitor/core/src/main/java/io/redick/collector/AbstractCollector.java">
+<error line="24" column="5" severity="error" message="方法注释：缺少Javadoc注释。" source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="24" column="17" severity="error" message="参数共： 9个，最多：5个。" source="com.puppycrawl.tools.checkstyle.checks.sizes.ParameterNumberCheck"/>
+<error line="48" column="5" severity="error" message="方法注释：缺少Javadoc注释。" source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="57" column="55" severity="error" message="&apos;webServer&apos;需要Javadoc注释 @param 。" source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
+<file name="/Users/penghuiliu/prog/ruubypay-server-monitor/core/src/main/java/io/redick/collector/customize/CustomizeCollector.java">
+<error line="34" column="116" severity="error" message="&apos;+&apos; 应另起一行。" source="com.puppycrawl.tools.checkstyle.checks.whitespace.OperatorWrapCheck"/>
+</file>
+<file name="/Users/penghuiliu/prog/ruubypay-server-monitor/core/src/main/java/io/redick/annotation/TpMonitor.java">
+</file>
+<file name="/Users/penghuiliu/prog/ruubypay-server-monitor/core/src/main/java/io/redick/spi/Join.java">
+</file>
+<file name="/Users/penghuiliu/prog/ruubypay-server-monitor/core/src/main/java/io/redick/spi/ExtensionFactory.java">
+</file>
+<file name="/Users/penghuiliu/prog/ruubypay-server-monitor/core/src/main/java/io/redick/spi/SpiExtensionFactory.java">
+</file>
+<file name="/Users/penghuiliu/prog/ruubypay-server-monitor/core/src/main/java/io/redick/spi/SPI.java">
+</file>
+<file name="/Users/penghuiliu/prog/ruubypay-server-monitor/core/src/main/java/io/redick/spi/ExtensionLoader.java">
+</file>
+<file name="/Users/penghuiliu/prog/ruubypay-server-monitor/core/src/main/java/io/redick/registry/TpRegistry.java">
+</file>
+<file name="/Users/penghuiliu/prog/ruubypay-server-monitor/core/src/main/java/io/redick/thread/NamedThreadFactory.java">
+</file>
+<file name="/Users/penghuiliu/prog/ruubypay-server-monitor/core/src/main/java/io/redick/spring/TpBeanPostProcessor.java">
+<error line="26" severity="error" message="本行字符数 143个，最多：120个。" source="com.puppycrawl.tools.checkstyle.checks.sizes.LineLengthCheck"/>
+</file>
+<file name="/Users/penghuiliu/prog/ruubypay-server-monitor/core/src/main/java/io/redick/spring/ApplicationContextHolder.java">
+<error line="23" column="5" severity="error" message="方法注释：缺少Javadoc注释。" source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="27" column="5" severity="error" message="方法注释：缺少Javadoc注释。" source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+<error line="31" column="5" severity="error" message="方法注释：缺少Javadoc注释。" source="com.puppycrawl.tools.checkstyle.checks.javadoc.JavadocMethodCheck"/>
+</file>
 </checkstyle>

@@ -9,7 +9,7 @@ import java.util.concurrent.ThreadPoolExecutor;
  */
 public final class TpRegistry {
 
-    private static final Map<String, ThreadPoolExecutor> TP_REGISTRY = Maps.newConcurrentMap();
+    public static final Map<String, ThreadPoolExecutor> TP_REGISTRY = Maps.newConcurrentMap();
 
     /**
      * refresh thread pool registry.

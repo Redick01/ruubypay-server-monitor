@@ -5,21 +5,23 @@ import static com.alibaba.dubbo.common.Constants.EXECUTOR_SERVICE_COMPONENT_KEY;
 import com.alibaba.dubbo.common.extension.ExtensionLoader;
 import com.alibaba.dubbo.common.store.DataStore;
 import io.redick.collector.AbstractCollector;
+import io.redick.config.TpMonitorConfig;
 import java.util.Map;
 import java.util.concurrent.ThreadPoolExecutor;
+import javax.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.boot.web.server.WebServer;
+import org.springframework.stereotype.Service;
 
 /**
  * @author Redick01
  */
 @Slf4j
+@Service
 public class AlibabaDubboCollector extends AbstractCollector {
 
-    private final String applicationName;
-
-    public AlibabaDubboCollector(String applicationName) {
-        this.applicationName = applicationName;
-    }
+    @Resource
+    private TpMonitorConfig tpMonitorConfig;
 
     @Override
     public void collect() {
@@ -34,12 +36,17 @@ public class AlibabaDubboCollector extends AbstractCollector {
             int maximumPoolSize = executor.getMaximumPoolSize();
             int queueSize = executor.getQueue().size();
             int remainSize = executor.getQueue().remainingCapacity();
-            String content = "dubbo线程池：{}，ActiveCount：{}， PoolSize：{}，CorePoolSize：{}， MaximumPoolSize：{}，队列总大小：{}，" +
+            String content = "alibaba dubbo线程池：{}，ActiveCount：{}， PoolSize：{}，CorePoolSize：{}， MaximumPoolSize：{}，队列总大小：{}，" +
                     "已使用大小：{}，剩余：{}，已完成任务数：{}";
             log.info(content, k, activeCount, poolSize, corePoolSize, maximumPoolSize, queueSize + remainSize,
                     queueSize, remainSize, taskCount);
-            doCollect(applicationName, "alibabadubbo-" + k, taskCount, activeCount, poolSize,
+            doCollect(tpMonitorConfig.getApplicationName(), "alibabadubbo-" + k, taskCount, activeCount, poolSize,
                     corePoolSize, maximumPoolSize, queueSize, remainSize);
         });
+    }
+
+    @Override
+    public void doCollectWebServer(WebServer webServer) {
+
     }
 }

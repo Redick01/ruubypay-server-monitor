@@ -5,11 +5,12 @@
     <modelVersion>4.0.0</modelVersion>
     
     <groupId>io.redick.monitor</groupId>
-    <artifactId>ruubypay-server-monitor</artifactId>
+    <artifactId>tp-monitor</artifactId>
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
         <module>core</module>
+        <module>starter</module>
     </modules>
     
     <!-- 将项目发布到私服的方式  -->
